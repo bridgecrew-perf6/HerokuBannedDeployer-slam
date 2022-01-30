@@ -3,6 +3,8 @@ FROM ubuntu:latest
 RUN apt update -y
 RUN apt upgrade -y
 
+RUN apt-get install git -y
+
 RUN git clone https://github.com/breakdowns/slam-mirrorbot mirrorbot/
 RUN cd mirrorbot
 
