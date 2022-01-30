@@ -10,6 +10,8 @@ RUN cd mirrorbot
 
 RUN apt install python3 -y
 
+RUN apt install python3-pip -y
+
 RUN pip3 install -r requirements-cli.txt
 
 CMD aria.sh
