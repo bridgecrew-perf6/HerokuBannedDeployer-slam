@@ -8,7 +8,7 @@ RUN apt-get install git -y
 RUN git clone https://github.com/breakdowns/slam-mirrorbot mirrorbot/
 RUN cd mirrorbot
 
-RUN apt install python3
+RUN apt install python3 -y
 
 RUN pip3 install -r requirements-cli.txt
 
